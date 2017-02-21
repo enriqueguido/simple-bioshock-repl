@@ -1,3 +1,4 @@
+loop do
 puts "Welcome to Rapture: REPL Edition"
 puts "During your early morning stroll in rapture you come across some Adam.
 Thinking to yourself what a rare occurance this is, you look around to see
@@ -26,12 +27,16 @@ when "a"
         the automated door closed and locked, before you can even turn around,
         Big Daddy Rushes you into the wall, crushes your body completely
         and walks away with his Adam. Try not to cry. Game Over, son."
+        puts "Press any key to start over"
+        option = gets.chomp
 when "b"
         puts "You pull out a .45 cal and attempt to shoot the Big Daddy,
         Ignorant of the fact that his armor is completely bulletproof (Haha)
         The Big Daddy Rushes you into the wall, crushes your body completely
         and walks away with his Adam. Try not to cry. Game Over, son."
         puts "Game Over *Que's world's smallest violin quarlet *"
+        puts "Press any key to start over"
+        option = gets.chomp
     end
 when "b"
         puts "You pull out a .45 cal and attempt to shoot the Big Daddy,
@@ -39,11 +44,14 @@ when "b"
         The Big Daddy Rushes you into the wall, crushes your body completely
         and walks away with his Adam. Try not to cry"
         puts "Game Over *Que's world's smallest violin quarlet*"
+        puts "Press any key to start over"
+        option = gets.chomp
     end
 when "b"
     puts "Fool, an opportunity missed! As you walk away you see a Big Daddy
     enter the room from the other side, thinking to yourself how lucky you
     are that he didnt catch you stealing his Adam.(You live, for now.)"
-    else
-    puts "Please choose one of the options above."
+        puts "Press any key to start over"
+        option = gets.chomp
+end
 end
